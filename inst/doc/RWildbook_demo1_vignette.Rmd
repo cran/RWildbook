@@ -1,0 +1,61 @@
+---
+title: "Vignette for RWildbook-demo-1 "
+author: "Xinxin Huang"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Demo of pulling and searching data from Wildbook framework}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+This demo shows you how to search and pull data from Wildbook framework with RWildbook package.
+In this demo, all datasets below are searching for the same set of data which is all the encounter of individual "A-001" in "whaleshark.org".
+
+The searchWB function provides the main interface to the Wilbook framework and can be used in
+one of three ways.
+
+
+* Case 1. You can supply filters based on the variables within the database.
+
+```{r, eval=FALSE}
+data1 <- searchWB(username="username",
+                  password="password",
+                  baseURL ="whaleshark.org",
+                  object="Encounter",
+                  individualID=c("A-001"))
+```
+
+* Case 2. If you have the JDOQL query for the search, You can ignore the filter arguments.
+
+```{r, eval=FALSE}
+data2<- searchWB(username="username",
+                 password="password",
+                 baseURL ="whaleshark.org",
+                 jdoql="SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'")
+```
+
+* Case 3.  If you have a searchURL on hand, you can directly open the URL with function "searchWB".
+
+If you are using Windows then you can enter the username and password directly in the search URL like this:
+```{r, eval=FALSE}
+data3 <- searchWB(searchURL = "http://username:password@whaleshark.org/rest/jdoql?SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'")
+```
+
+Otherwise, on MacOS or Linux you will need to supply your username and password as separate arguements:
+```{r,eval=FALSE}
+data3 <-
+  searchWB(username = "username",
+           password = "password",
+           searchURL = "http://www.whaleshark.org/rest/jdoql?SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'")
+```
+
+
+* Results.
+
+All of these return a data frame like the following (note that the data has been altered for anonymity):
+```{r}
+data("vignette_1_data",package="RWildbook")
+head(vignette_1_data)[,c("location","year","month","day")]
+```
+
