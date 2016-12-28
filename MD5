@@ -1,4 +1,4 @@
-4830ac6c65f9dc79b1c3d5f35fb03952 *DESCRIPTION
+e9c8b41dbe1ceed3ee9d2ebebe48ddb6 *DESCRIPTION
 b22a7ae1b4e9a9c9e8425b1a72177ef1 *NAMESPACE
 2cf6c0f0614cae8fa50b9983226a7840 *R/RWildbook-package.r
 4b27c2c3fce8966cf4d878b32db3d050 *R/WBjdoql.R
@@ -10,15 +10,15 @@ af0c2baaa61f4c32a4d96f41aad97f40 *R/data_documentation.R
 b97a091a4d1ace5d4bef7ef8b29073c5 *R/markedData.R
 42c13e0c9d611b8de9dca8f9a80654bf *R/searchWB.R
 06e11ed4f5c6ad194284439ffaa4dae6 *R/sexstring.R
-6891f64bc5aef225722454a1b82762b2 *build/vignette.rds
+6c0b08bbf3f36ed652904d9e79e2c3c6 *build/vignette.rds
 f9478bcefe3ff771972d33ef3d9b33cf *data/vignette_1_data.rda
 2c4856455cc6a263cd2f85c6df4f9611 *data/vignette_2_data.rda
-aa798d93fd22e3dd185a3ecc20bd5ad8 *inst/doc/RWildbook_demo1_vignette.R
+49454ea0315d6687b6b4eed2c0abc56e *inst/doc/RWildbook_demo1_vignette.R
 23d901b6b49f808ca94c0998d98c1b94 *inst/doc/RWildbook_demo1_vignette.Rmd
-b7b30ee3dc0a0037b3b13e1de98e08c1 *inst/doc/RWildbook_demo1_vignette.html
-136d0e1f9c46e294c88a8940bb562070 *inst/doc/RWildbook_demo2_vignette.R
+ac5dcb730bad2c8a240e117d9f82a942 *inst/doc/RWildbook_demo1_vignette.html
+b676fe3f7c2b98cfad4729b166edda5a *inst/doc/RWildbook_demo2_vignette.R
 e4e297dad19f59b2c7a69ad3dcb17c3e *inst/doc/RWildbook_demo2_vignette.Rmd
-11fc697a14579ed956c36c21eef20827 *inst/doc/RWildbook_demo2_vignette.html
+abe0a97db3a51dfc36c4309b6e09e9e7 *inst/doc/RWildbook_demo2_vignette.html
 41b09d1acbb7b45067cafab05641ddeb *man/RWildbook.Rd
 73685f81cbff2e402183f1a7d9601f51 *man/WBjdoql.Rd
 ee61790254f4fbe0636045d48610d33a *man/WBsearchURL.Rd
