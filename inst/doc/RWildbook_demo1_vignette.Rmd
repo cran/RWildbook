@@ -39,7 +39,7 @@ data2<- searchWB(username="username",
 
 If you are using Windows then you can enter the username and password directly in the search URL like this:
 ```{r, eval=FALSE}
-data3 <- searchWB(searchURL = "http://username:password@whaleshark.org/rest/jdoql?SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'")
+data3 <- searchWB(searchURL = "https://username:password@whaleshark.org/rest/jdoql?SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'")
 ```
 
 Otherwise, on MacOS or Linux you will need to supply your username and password as separate arguements:
@@ -47,7 +47,7 @@ Otherwise, on MacOS or Linux you will need to supply your username and password 
 data3 <-
   searchWB(username = "username",
            password = "password",
-           searchURL = "http://www.whaleshark.org/rest/jdoql?SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'")
+           searchURL = "https://www.whaleshark.org/rest/jdoql?SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'")
 ```
 
 

@@ -12,7 +12,7 @@
 
 <meta name="author" content="Xinxin Huang" />
 
-<meta name="date" content="2016-12-27" />
+<meta name="date" content="2017-02-08" />
 
 <title>Vignette for RWildbook-demo-1</title>
 
@@ -70,7 +70,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">Vignette for RWildbook-demo-1</h1>
 <h4 class="author"><em>Xinxin Huang</em></h4>
-<h4 class="date"><em>2016-12-27</em></h4>
+<h4 class="date"><em>2017-02-08</em></h4>
 
 
 
@@ -95,12 +95,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li>Case 3. If you have a searchURL on hand, you can directly open the URL with function “searchWB”.</li>
 </ul>
 <p>If you are using Windows then you can enter the username and password directly in the search URL like this:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">data3 &lt;-<span class="st"> </span><span class="kw">searchWB</span>(<span class="dt">searchURL =</span> <span class="st">&quot;http://username:password@whaleshark.org/rest/jdoql?SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">data3 &lt;-<span class="st"> </span><span class="kw">searchWB</span>(<span class="dt">searchURL =</span> <span class="st">&quot;https://username:password@whaleshark.org/rest/jdoql?SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'&quot;</span>)</code></pre></div>
 <p>Otherwise, on MacOS or Linux you will need to supply your username and password as separate arguements:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">data3 &lt;-
 <span class="st">  </span><span class="kw">searchWB</span>(<span class="dt">username =</span> <span class="st">&quot;username&quot;</span>,
            <span class="dt">password =</span> <span class="st">&quot;password&quot;</span>,
-           <span class="dt">searchURL =</span> <span class="st">&quot;http://www.whaleshark.org/rest/jdoql?SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'&quot;</span>)</code></pre></div>
+           <span class="dt">searchURL =</span> <span class="st">&quot;https://www.whaleshark.org/rest/jdoql?SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'&quot;</span>)</code></pre></div>
 <ul>
 <li>Results.</li>
 </ul>

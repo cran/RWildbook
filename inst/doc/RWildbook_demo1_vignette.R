@@ -12,13 +12,13 @@
 #                   jdoql="SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'")
 
 ## ---- eval=FALSE---------------------------------------------------------
-#  data3 <- searchWB(searchURL = "http://username:password@whaleshark.org/rest/jdoql?SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'")
+#  data3 <- searchWB(searchURL = "https://username:password@whaleshark.org/rest/jdoql?SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'")
 
 ## ----eval=FALSE----------------------------------------------------------
 #  data3 <-
 #    searchWB(username = "username",
 #             password = "password",
-#             searchURL = "http://www.whaleshark.org/rest/jdoql?SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'")
+#             searchURL = "https://www.whaleshark.org/rest/jdoql?SELECT FROM org.ecocean.Encounter WHERE individualID == 'A-001'")
 
 ## ------------------------------------------------------------------------
 data("vignette_1_data",package="RWildbook")

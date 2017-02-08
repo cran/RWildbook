@@ -1,8 +1,8 @@
 Package: RWildbook
 Type: Package
 Title: Interface for the 'Wildbook' Wildlife Data Management Framework
-Version: 0.9.1
-Date: 2016-11-26
+Version: 0.9.2
+Date: 2017-02-08
 Authors@R: c(person("Simon", "Bonner", email = "sbonner6@uwo.ca", role = c("aut","cre")),person("Xinxin", "Huang", email = "xhuan63@uwo.ca", role = c("aut")))
 Description: Provides an interface with the 'Wildbook' mark-recapture ecological database framework. It 
     helps users to pull data from the 'Wildbook' framework and format data for further analysis
@@ -15,9 +15,9 @@ RoxygenNote: 5.0.1
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2016-12-27 19:14:30 UTC; sbonn
+Packaged: 2017-02-08 20:36:02 UTC; sbonn
 Author: Simon Bonner [aut, cre],
   Xinxin Huang [aut]
 Maintainer: Simon Bonner <sbonner6@uwo.ca>
 Repository: CRAN
-Date/Publication: 2016-12-28 02:02:16
+Date/Publication: 2017-02-09 00:44:05

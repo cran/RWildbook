@@ -5,9 +5,9 @@
 \title{Pull data from the Wildbook framework.}
 \usage{
 searchWB(searchURL = NULL, username = NULL, password = NULL, baseURL,
-  jdoql = NULL, object = "encounter", location = NULL,
-  locationID = NULL, sighting_date = c("1964-01-01", "2016-12-31"),
-  encounter_submission_date = c("2003-01-01", "2016-12-31"),
+  jdoql = NULL, protocol = "https", object = "encounter",
+  location = NULL, locationID = NULL, sighting_date = c("1964-01-01",
+  "2016-12-31"), encounter_submission_date = c("2003-01-01", "2016-12-31"),
   date_format = "\%Y-\%m-\%d", sex = c("male", "female", "unknown"),
   status = c("alive", "dead"), measurement = NULL, individualID = NULL,
   encounterID = NULL, encounter_type = NULL, Date_of_birth = NULL,
@@ -24,6 +24,8 @@ searchWB(searchURL = NULL, username = NULL, password = NULL, baseURL,
 \item{baseURL}{A character object of the base URL represent the Wildbook data base.}
 
 \item{jdoql}{A character object of the JDOQL string for data searching.}
+
+\item{protocol}{Defines communication protocol. either "http" or "https" (default).}
 
 \item{object}{A character object for defining the the search type. The value can be
 either "encounter" for the encounter search or "individual" for the individual search.

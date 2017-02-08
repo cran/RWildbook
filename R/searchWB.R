@@ -107,6 +107,8 @@
 #'
 #' @param showJDOQL logical. If FALSE(default) the function will not return
 #'  the search JDOQL, otherwise the function returns the search JDOQL.
+#' 
+#' @param protocol Defines communication protocol. either "http" or "https" (default).
 #'
 #' @importFrom jsonlite fromJSON
 #' @importFrom utils download.file URLencode
@@ -147,6 +149,7 @@ searchWB <-
            password = NULL,
            baseURL,
            jdoql = NULL,
+           protocol="https",
            object = "encounter",
            location = NULL,
            locationID = NULL,
@@ -201,10 +204,10 @@ searchWB <-
       }
       if (myos == "win" || myos == "unix") {
         searchURL <-
-          WBsearchURL(username, password, baseURL, jdoql)
+          WBsearchURL(username, password, baseURL, jdoql,protocol)
       }
       else if(myos == "mac"){
-        searchURL <- WBsearchURL(NULL, NULL, baseURL, jdoql)
+        searchURL <- WBsearchURL(NULL, NULL, baseURL, jdoql,protocol)
       }
       else{
         stop("Unknown operating system",myos,".\n")

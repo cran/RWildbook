@@ -4,7 +4,7 @@
 \alias{WBsearchURL}
 \title{Generate the search URL given the JDOQL query.}
 \usage{
-WBsearchURL(username, password, baseURL, jdoql)
+WBsearchURL(username, password, baseURL, jdoql, protocol = "https")
 }
 \arguments{
 \item{username}{The username in the Wildbook framework.}
@@ -14,6 +14,8 @@ WBsearchURL(username, password, baseURL, jdoql)
 \item{baseURL}{The URL represent the desire wildbook data base.}
 
 \item{jdoql}{The JDOQL string for data searching.}
+
+\item{protocol}{Defines communication protocol. either "http" or "https" (default).}
 }
 \description{
 This function helps users to generate the URL for data searching in the Wildbook framework with the account information of Wildbook, the URl of the desire wildbook and the JDOQL query.
