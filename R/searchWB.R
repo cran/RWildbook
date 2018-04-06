@@ -199,8 +199,7 @@ searchWB <-
     #Step 2.Define(generate) the search URL
     if (is.null(searchURL)) {
       if (is.null(username) || is.null(password)) {
-        warning("Lack of username and password")
-        break
+        stop("Lack of username and password")
       }
       if (myos == "win" || myos == "unix") {
         searchURL <-

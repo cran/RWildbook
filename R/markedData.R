@@ -141,12 +141,10 @@ markedData <-
 
     #Step 3. Check the validity of capture time interval.
     if (!length(start.dates) == length(end.dates)) {
-      warning("start.dates and end.dates should have the same length")
-      break()
+      stop("start.dates and end.dates should have the same length")
     }
     if (any((end.dates - start.dates) < 0)) {
-      warning("end.dates should be dates after start.dates")
-      break()
+      stop("end.dates should be dates after start.dates")
     }
 
     #Step 4. generate the capture history of each individual from the encounter information.

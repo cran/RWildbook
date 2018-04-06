@@ -52,8 +52,7 @@ function(object="encounter",
     enc<-"encounters.contains(enc) && "
     variables<-"VARIABLES org.ecocean.Encounter enc"
   } else {
-    warning("A valid object value should be either 'encounter' or 'individual'.")
-    break
+    stop("A valid object value should be either 'encounter' or 'individual'.")
   }
   if(!is.null(measurement)){
     variables <- c(variables,"org.ecocean.Measurement measurement0")
